@@ -41,7 +41,7 @@ export async function getStaticProps(Context) {
     mainurl = slugs.params.slugs
 
     mainurl.map(x => {
-        slugString += x + ''
+        slugString += x + '/'
     });
     console.log(slugString)
 
