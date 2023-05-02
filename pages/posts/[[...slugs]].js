@@ -27,7 +27,7 @@ export default function Comp({ metaTags }) {
 
 
             }
-            {* <p>hello check</p> */}
+            {*/ <p>hello check</p> */}
         </div>
     )
 }
@@ -41,7 +41,7 @@ export async function getStaticProps(Context) {
     mainurl = slugs.params.slugs
 
     mainurl.map(x => {
-        slugString += x + '/'
+        slugString += x + ''
     });
     console.log(slugString)
 
