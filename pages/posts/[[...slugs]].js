@@ -27,7 +27,7 @@ export default function Comp({ metaTags }) {
 
 
             }
-            {/* <p>hello check</p> */}
+            {* <p>hello check</p> */}
         </div>
     )
 }
