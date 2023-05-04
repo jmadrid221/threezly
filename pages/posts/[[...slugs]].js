@@ -41,7 +41,7 @@ export async function getStaticProps(Context) {
     mainurl = slugs.params.slugs
 
     mainurl.map(x => {
-        slugString += x + '/'
+        slugString += '/'+x 
     });
     console.log(slugString)
 
@@ -51,7 +51,7 @@ export async function getStaticProps(Context) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            url: 'https://threezly.com/' + slugString
+            url: 'https://threezly.com' + slugString
         })
     })
 
